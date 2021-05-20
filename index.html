@@ -5,6 +5,22 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<h1>Love</h1>
+	<h1>I Kiss You</h1>
+	<button onclick="enableControls()" type="button">Enable Controls</button>
+	<button onclick="disableControls()" type="button">Disable Controls</button>
+	<button onclick="checkControls()" type="button">Check Controls</button>
+	<video id="myVideo" height="176">
+		<source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
+		<source src="" type="video/mp4">
+Your bowser does not support HTML5 video
+	</video>
+<script>
+	var vid = document.getElementById("myVideo");
+	function enableControls() {
+		vid.Controls = true;
+		vid.load();
+	}
+</script>
+
 </body>
 </html>
