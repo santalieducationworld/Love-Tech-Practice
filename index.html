@@ -6,30 +6,38 @@
 </head>
 <body>
 	<h1>I Kiss You</h1>
-<button onclick="enableControls()" type="button">Enable controls</button>
-<button onclick="disableControls()" type="button">Disable controls</button>
-<button onclick="checkControls()" type="button">Check controls status</button><br> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br>
+  <video id="video1" width="420">
+    <source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
+    Your browser does not support HTML video.
+  </video>
+</div> 
 
-<video id="myVideo" width="320" height="176">
-  <source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
-  Your browser does not support HTML5 video.
-</video>
+<script> 
+var myVideo = document.getElementById("video1"); 
 
-<script>
-var vid = document.getElementById("myVideo");
-
-function enableControls() { 
-  vid.controls = true;
-  vid.load();
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
 } 
 
-function disableControls() { 
-  vid.controls = false;
-  vid.load();
+function makeBig() { 
+    myVideo.width = 560; 
 } 
 
-function checkControls() { 
-  alert(vid.controls);
+function makeSmall() { 
+    myVideo.width = 320; 
 } 
+
+function makeNormal() { 
+    myVideo.width = 420; 
+} 
+</script> 
 </body>
 </html>
