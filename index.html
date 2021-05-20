@@ -20,6 +20,13 @@ Your bowser does not support HTML5 video
 		vid.Controls = true;
 		vid.load();
 	}
+	function disableControls() {
+		vid.Controls = false;
+		vid.load();
+	}
+	function checkControls() {
+		alert(vid.Controls);
+	}
 </script>
 
 </body>
