@@ -6,28 +6,30 @@
 </head>
 <body>
 	<h1>I Kiss You</h1>
-	<button onclick="enableControls()" type="button">Enable Controls</button>
-	<button onclick="disableControls()" type="button">Disable Controls</button>
-	<button onclick="checkControls()" type="button">Check Controls</button>
-	<video id="myVideo" width="320" height="176">
-		<source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
-		<source src="" type="video/mp4">
-Your bowser does not support HTML5 video
-	</video>
-<script>
-	var vid = document.getElementById("myVideo");
-	function enableControls() {
-		vid.Controls = true;
-		vid.load();
-	}
-	function disableControls() {
-		vid.Controls = false;
-		vid.load();
-	}
-	function checkControls() {
-		alert(vid.Controls);
-	}
-</script>
+<button onclick="enableControls()" type="button">Enable controls</button>
+<button onclick="disableControls()" type="button">Disable controls</button>
+<button onclick="checkControls()" type="button">Check controls status</button><br> 
 
+<video id="myVideo" width="320" height="176">
+  <source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<script>
+var vid = document.getElementById("myVideo");
+
+function enableControls() { 
+  vid.controls = true;
+  vid.load();
+} 
+
+function disableControls() { 
+  vid.controls = false;
+  vid.load();
+} 
+
+function checkControls() { 
+  alert(vid.controls);
+} 
 </body>
 </html>
