@@ -5,13 +5,14 @@
 <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	<h1>I Kiss You</h1>
-<button onclick="play()">Juna
+	<h1>Make Your LIfe </h1>
+
+  <button onclick="play()">Juna
 </button>
-<button onclick="pause()">Singh</button>
-<button onclick="makeBig()">Big</button>
-<button onclick="makeSmall()">Small</button>
-<button onclick="makeNormal()">Normal</button>
+<button onclick="pause()">Sudarshan</button>
+<button onclick="makeBig()">Madhusudan</button>
+<button onclick="makeSmall()">Ananta</button>
+<button onclick="makeNormal()">Sumanta</button>
 <br><br>
 <video id="video1" width="420">
   <source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
@@ -37,6 +38,30 @@
     myVideo.width = 420;
   }
   
+</script>
+
+<hr>
+<!--Another Video Kanchi re kanchi re -->
+<button onclick="enableControls()" type="button">Enable Controls</button>
+<button onclick="disableControls()" type="button">Disable Controls</button>
+<button onclick="checkControls()">Check Controls</button>
+<video id="love" width="320" height="176">
+  <source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
+</video>
+
+<script>
+  var vid = document.getElementById("love");
+  function enableControls(){
+    vid.controls = true;
+    vid.load();
+  }
+  function disableControls(){
+    vid.controls = false;
+    vid.load();
+  }
+  function checkControls(){
+    alert(vid.controls);
+  }
 </script>
 
 </body>
