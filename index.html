@@ -6,22 +6,23 @@
 </head>
 <body>
 	<h1>I Kiss You</h1>
-<button onclick="playPause()">Play/Pause</button>
+<button onclick="play()">Juna</button>
+<button onclick="pause()">Singh</button>
 <button onclick="makeBig()">Big</button>
 <button onclick="makeSmall()">Small</button>
 <button onclick="makeNormal()">Normal</button>
 <br><br>
 <video id="video1" width="420">
-  <source src="AMAG MONE RE INJ GE.mp4" type="video/mp4">
+  <source src="Kanchi Re Kanchi Re - Full Video Song - Babushan, Bhoomika - Hero No1 - TCP.webm" type="video/mp4">
     Your browser does not support HTML video.
 </video>
 <script>
   var myVideo=document.getElementById("video1");
-  function playPause(){
-    if (myVideo.paused)
+  function play(){
       myVideo.play();
-    else
-      myVideo.pause();
+  }
+  function pause(){
+    myVideo.pause();
   }
   function makeBig(){
     myVideo.width = 560;
